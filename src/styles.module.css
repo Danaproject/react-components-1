@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  display: block;
+  margin: 40px auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #214fc6;
+}
+.components {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
