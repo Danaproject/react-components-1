@@ -2,7 +2,7 @@ import Container from './components/Container/Container';
 import Counter from './components/Counter';
 import Dropdown from './components/Dropdown';
 import ColorPicker from './components/ColorPicker';
-import CounterHooks from './components/SingleCounter';
+import SingleCounter from './components/SingleCounter';
 import './styles.css';
 
 const colorPickerOptions = [
@@ -23,7 +23,7 @@ function App() {
         <Counter initialValue={10} />
         <Dropdown />
         <ColorPicker options={colorPickerOptions} />
-        <CounterHooks />
+        <SingleCounter />
       </div>
     </Container>
     

@@ -18,13 +18,24 @@ const SingleCounter = ({ initialValue = 0 }) => {
 
   const handleChangeStep = (e) => setStep(Number(e.target.value));
 
+  // component did mount
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('value'));
+    setValue(data);
+  }, []);
+
+  // component did update - after data update
+  useEffect(() => {
+    localStorage.setItem('value', JSON.stringify(value));
+  }, [value]);
+
   useEffect(() => {
     console.log('value:', value);
   }, [value]);
 
   return (
     <div className="SingleCounter">
-      <h2>Single Counter</h2>
+      <h2>Counter 0 - 500</h2>
 
       <label>
         <span>step</span>
